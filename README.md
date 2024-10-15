@@ -1,7 +1,9 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+#### Ubuntu/JetsonNano環境
 **Table of Contents**
 
+[doc/files/install_ubuntu.md](./doc/files/install_ubuntu.md)に手順を記載
 - [Tetris](#tetris)
   - [実行環境準備](#%E5%AE%9F%E8%A1%8C%E7%92%B0%E5%A2%83%E6%BA%96%E5%82%99)
       - [Mac環境](#mac%E7%92%B0%E5%A2%83)
