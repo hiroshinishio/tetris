@@ -1,4 +1,5 @@
 # windowsのpowershellを使ってテトリス環境を構築する
+必要なパッケージをインストールする
 
 ### powershellとは
 
@@ -58,6 +59,7 @@ git --version
 
 powershell上で以下を実行、もしくは`microsoft store`上で`python`と検索し、インストールページからインストールする。
 
+以下の通り実行し、tetrisが表示されればOK
 ```
 python
 ```
