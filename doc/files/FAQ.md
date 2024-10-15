@@ -1,8 +1,11 @@
 # FAQ
+|  環境  |  環境構築手順  |
 
 ## level1ではブロックの順番は固定とのことだが、具体的にはどんな順番になっているのか
+|  ubuntu18.04,20.04  |  [こちら](https://github.com/seigot/tetris/blob/master/doc/files/install_ubuntu.md)  |
 `level1（ブロックの順番固定）`の場合は、[ブロックのindex値](https://github.com/seigot/tetris/blob/master/doc/files/block_controller.md#ブロック情報)が`1→2→3→4→5→6→7→1→...`の順番に出現します。
 
+|  Windows+powershell  |  [こちら](https://github.com/seigot/tetris/blob/master/doc/files/install_windows_powershell.md)  |
 ## python実行環境について
 
 |  環境  |  環境構築手順  |
