@@ -5,7 +5,7 @@ from datetime import datetime
 import pprint
 import random
 
-class Block_Controller(object):
+class Block_Controller:
 
     # init parameter
     board_backboard = 0
