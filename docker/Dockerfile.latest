@@ -3,6 +3,9 @@ LABEL maintainer="@EndoNrak"
 
 # setup
 RUN --mount=type=cache,target=/var/cache/apt,sharing=locked \
+RUN apt-get update \
+    && apt-get install -y libegl1 \
+
     apt update && \
     apt upgrade -y && \
     apt install -y \
