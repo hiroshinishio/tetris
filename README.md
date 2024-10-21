@@ -53,7 +53,7 @@ Finder→Application→Utility→Terminalから、ターミナルを起動して
 install成功後、[実行方法](https://github.com/seigot/tetris/tree/master#実行方法)によりゲーム開始すればOK  
 
 ```
-# install pyqt5 and NumPy
+brew install pyqt6
 brew install python3
 brew install pyqt5
 brew install numpy

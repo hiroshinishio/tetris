@@ -1,10 +1,11 @@
 #!/usr/bin/python3
+from PyQt6.QtCore import Qt
 # -*- coding: utf-8 -*-
 
 import sys
-from PyQt5.QtWidgets import QMainWindow, QFrame, QDesktopWidget, QApplication, QHBoxLayout, QLabel
-from PyQt5.QtCore import Qt, QBasicTimer, pyqtSignal
-from PyQt5.QtGui import QPainter, QColor, QFont
+from PyQt6.QtWidgets import QMainWindow, QFrame, QApplication, QHBoxLayout, QLabel
+from PyQt6.QtCore import Qt, QBasicTimer, pyqtSignal
+from PyQt6.QtGui import QPainter, QColor, QFont
 
 from board_manager import BOARD_DATA, Shape
 from block_controller import BLOCK_CONTROLLER
@@ -171,7 +172,7 @@ class Game_Manager(QMainWindow):
         self.speed = self.drop_interval # block drop speed
 
         self.timer = QBasicTimer()
-        self.setFocusPolicy(Qt.StrongFocus)
+        self.setFocusPolicy(Qt.FocusPolicy.StrongFocus)
 
         hLayout = QHBoxLayout()
 
@@ -209,9 +210,9 @@ class Game_Manager(QMainWindow):
     # Window を中心へ移動
     ###############################################
     def center(self):
-        screen = QDesktopWidget().screenGeometry()
+        screen = self.screen().availableGeometry()
         size = self.geometry()
-        self.move((screen.width() - size.width()) // 2, (screen.height() - size.height()) // 2)
+        self.move(int((screen.width() - size.width()) / 2), int((screen.height() - size.height()) / 2))
 
     ###############################################
     # 開始
@@ -1130,4 +1131,4 @@ class Board(QFrame):
 if __name__ == '__main__':
     app = QApplication([])
     GAME_MANEGER = Game_Manager()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())
