@@ -26,6 +26,8 @@ jobs:
       - name: checkout repository
         uses: actions/checkout@v3
         with:
+          ref: ${{ github.head_ref }}
+          fetch-depth: 0
           path: target_dir
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v4
