@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import sys
-from PyQt6.QtWidgets import QMainWindow, QFrame, QDesktopWidget, QApplication, QHBoxLayout, QLabel
+from PyQt6.QtWidgets import QMainWindow, QFrame, QApplication, QHBoxLayout, QLabel
 from PyQt6.QtCore import Qt, QBasicTimer, pyqtSignal
 from PyQt6.QtGui import QPainter, QColor, QFont
 
@@ -209,9 +209,9 @@ class Game_Manager(QMainWindow):
     # Window を中心へ移動
     ###############################################
     def center(self):
-        screen = QDesktopWidget().screenGeometry()
+        screen = self.screen().availableGeometry()
         size = self.geometry()
-        self.move((screen.width() - size.width()) // 2, (screen.height() - size.height()) // 2)
+        self.move(int((screen.width() - size.width()) / 2), int((screen.height() - size.height()) / 2))
 
     ###############################################
     # 開始
