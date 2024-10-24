@@ -32,6 +32,7 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
       - name: Install dependencies
+       working-directory: target_dir
         run: |
           sudo apt-get update
           sudo apt-get install -y libegl1 libglu1-mesa-dev libgl1-mesa-dev
