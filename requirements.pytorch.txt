@@ -1,5 +1,6 @@
+PyQt6==6.5.1
 numpy
-pyqt5
+PyQt6>=6.7.1
 hydra-core
 torch 
 torchvision 

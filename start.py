@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+import PyQt6
 # -*- coding: utf-8 -*-
 
 import sys
