@@ -49,6 +49,8 @@ jobs:
           export QT_QPA_PLATFORM=offscreen
           # run tetris
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          if [ -f requirements.pytorch.txt ]; then pip install -r requirements.pytorch.txt; fi
+
           python start.py -m sample -t 3 -f $HOME/result.json
           # check result
           jq . $HOME/result.json
@@ -63,6 +65,8 @@ jobs:
           export QT_QPA_PLATFORM=offscreen
           # run tetris
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          if [ -f requirements.pytorch.txt ]; then pip install -r requirements.pytorch.txt; fi
+
           if [ -f requirements.pytorch.txt ]; then pip install -r requirements.pytorch.txt; fi
           python start.py -m predict_sample -l 2 -t 5 --predict_weight weight/DQN/sample_weight.pt -f $HOME/result_dqn.json
           # check result
@@ -79,6 +83,8 @@ jobs:
           # run tetris
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
           if [ -f requirements.pytorch.txt ]; then pip install -r requirements.pytorch.txt; fi
+          if [ -f requirements.pytorch.txt ]; then pip install -r requirements.pytorch.txt; fi
+
           python start.py -m predict_sample2 -l 2 -t 5 --predict_weight weight/MLP/sample_weight.pt -f $HOME/result_mlp.json
           # check result
           jq . $HOME/result_mlp.json
@@ -94,6 +100,8 @@ jobs:
           # run tetris
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
           if [ -f requirements.pytorch.txt ]; then pip install -r requirements.pytorch.txt; fi
+          if [ -f requirements.pytorch.txt ]; then pip install -r requirements.pytorch.txt; fi
+
           python start.py -m predict_sample3 -l 2 -t 5 --predict_weight weight/DQN/sample_weight.pt -f $HOME/result_dqn.json
           # check result
           jq . $HOME/result_dqn.json
