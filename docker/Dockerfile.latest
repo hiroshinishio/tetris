@@ -3,6 +3,9 @@ LABEL maintainer="@EndoNrak"
 
 # setup
 RUN --mount=type=cache,target=/var/cache/apt,sharing=locked \
+
+# Update PyQt5 to PyQt6
+RUN pip install pyqt6
     apt update && \
     apt upgrade -y && \
     apt install -y \
