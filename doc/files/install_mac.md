@@ -13,11 +13,11 @@ brew install numpy
 brew install git
 ```
 
-Mac(M1)環境等では`pip3 install pyqt5`でエラーになることがある。`brew`を使うことで解決することがある。  
-[Mac(M1)にpip3 install pyqt5でpyqt5をインストールしようしようとするとエラーになる（Preparing metadata (pyproject.toml) ... error）](https://qiita.com/seigot/items/c779d187982268cf8b12)  
+Mac(M1)環境等では`pip3 install pyqt6`でエラーになることがある。`brew`を使うことで解決することがある。  
+[Mac(M1)にpip3 install pyqt6でpyqt6をインストールしようしようとするとエラーになる（Preparing metadata (pyproject.toml) ... error）](https://qiita.com/seigot/items/c779d187982268cf8b12)  
 
 ```
-brew install pyqt5
+brew install pyqt6
 ```
 
 `pytorch`を使う場合は以下のようにすればOK  
