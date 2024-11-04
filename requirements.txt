@@ -1,3 +1,2 @@
 ﻿numpy
 PyQt6
-pyqt6
