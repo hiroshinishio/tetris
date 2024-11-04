@@ -1,4 +1,5 @@
 numpy
+PyQt6
 pyqt6
 hydra-core
 torch 
