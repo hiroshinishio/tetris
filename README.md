@@ -55,7 +55,7 @@ install成功後、[実行方法](https://github.com/seigot/tetris/tree/master#�
 ```
 # install pyqt5 and NumPy
 brew install python3
-brew install pyqt5
+brew install pyqt6
 brew install numpy
 # install other packages
 brew install git
@@ -312,7 +312,7 @@ git push                                                   # 変更を反映
 
 [https://github.com/LoveDaisy/tetris_game](https://github.com/LoveDaisy/tetris_game) <br>
 [https://github.com/seigot/tetris_game (2021.12時点まで使用)](https://github.com/seigot/tetris_game)<br>
-[http://zetcode.com/gui/pyqt5/tetris/](http://zetcode.com/gui/pyqt5/tetris/)<br>
+[http://zetcode.com/gui/pyqt6/tetris/](http://zetcode.com/gui/pyqt6/tetris/)<br>
 [テトリスの歴史を「ブロックが落ちるルール」の進化から学ぶ](https://gigazine.net/news/20191116-tetris-algorithm/)<br>
 [『テトリスでPythonを学ぼうv4』優勝コード解説](https://qiita.com/mozziemagnet/private/b6839c9b7b438cbdb1b1)<br>
 
