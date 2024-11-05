@@ -37,6 +37,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install flake8 pytest
           sudo apt-get install -y python3-pip
+           sudo apt-get install -y libegl1
           pip3 install --upgrade pip
           sudo apt-get install -y git
           sudo apt-get install -y jq
