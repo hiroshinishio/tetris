@@ -3,9 +3,9 @@
 Finder→Application→Utility→Terminalから、ターミナル画面を起動して以下コマンドを実行する。<br>
 
 ```
-# install pyqt5 and NumPy
+# install pyqt6 and NumPy
 brew install python3
-brew install pyqt5
+brew install pyqt6
 brew install numpy
 #pip3 install pyqt5
 #pip3 install numpy
@@ -17,7 +17,7 @@ Mac(M1)環境等では`pip3 install pyqt5`でエラーになることがある�
 [Mac(M1)にpip3 install pyqt5でpyqt5をインストールしようしようとするとエラーになる（Preparing metadata (pyproject.toml) ... error）](https://qiita.com/seigot/items/c779d187982268cf8b12)  
 
 ```
-brew install pyqt5
+brew install pyqt6
 ```
 
 `pytorch`を使う場合は以下のようにすればOK  
