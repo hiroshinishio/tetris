@@ -35,7 +35,7 @@ jobs:
         run: |
           sudo apt-get update
           python -m pip install --upgrade pip
-          pip install flake8 pytest
+          pip3 install flake8 pytest
           sudo apt-get install -y python3-pip
           pip3 install --upgrade pip
           sudo apt-get install -y git
