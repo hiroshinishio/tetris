@@ -1,5 +1,5 @@
 numpy
-pyqt5
+PyQt6==<latest_version>
 hydra-core
 torch 
 torchvision 
