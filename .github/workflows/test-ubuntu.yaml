@@ -8,6 +8,7 @@ on:
         paths-ignore:
           - '.gitignore'
           - 'LICENSE'
+    - name: Install PyQt6
           - '**.md'
 
 # 環境変数
