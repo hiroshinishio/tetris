@@ -47,6 +47,7 @@ jobs:
           $Env:QT_QPA_PLATFORM = 'offscreen'
           # run tetris
           if( Test-Path .\requirements.txt ){ pip install -r requirements.txt }
+           pip install PyQt6
           python start.py -m sample -t 3 -f $HOME/result.json
 
       - name: tetris_DQN_sample
