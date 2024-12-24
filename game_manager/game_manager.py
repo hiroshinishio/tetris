@@ -1130,4 +1130,4 @@ class Board(QFrame):
 if __name__ == '__main__':
     app = QApplication([])
     GAME_MANEGER = Game_Manager()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())
