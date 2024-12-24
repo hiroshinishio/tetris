@@ -35,6 +35,7 @@ jobs:
         run: |
           sudo apt-get update
           python -m pip install --upgrade pip
+          sudo apt-get install -y libegl1-mesa
           pip install flake8 pytest
           sudo apt-get install -y python3-pip
           pip3 install --upgrade pip
