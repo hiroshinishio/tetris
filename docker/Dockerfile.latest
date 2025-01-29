@@ -1,4 +1,5 @@
 FROM python:3.10-slim-bullseye
+# Update PyQt5 to PyQt6
 LABEL maintainer="@EndoNrak"
 
 # setup
