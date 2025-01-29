@@ -209,7 +209,7 @@ class Game_Manager(QMainWindow):
     # Window を中心へ移動
     ###############################################
     def center(self):
-        screen = QDesktopWidget().screenGeometry()
+        screen = QApplication.primaryScreen().availableGeometry()
         size = self.geometry()
         self.move((screen.width() - size.width()) // 2, (screen.height() - size.height()) // 2)
 
