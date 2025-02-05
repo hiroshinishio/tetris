@@ -171,7 +171,7 @@ class Game_Manager(QMainWindow):
         self.speed = self.drop_interval # block drop speed
 
         self.timer = QBasicTimer()
-        self.setFocusPolicy(Qt.FocusPolicy.StrongFocus)
+        self.setFocusPolicy(Qt.FocusPolicy.StrongFocus.value)
 
         hLayout = QHBoxLayout()
 
