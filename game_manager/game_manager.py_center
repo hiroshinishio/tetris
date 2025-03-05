@@ -1,0 +1,2 @@
+-        screen = QDesktopWidget().screenGeometry()
+        screen = QApplication.primaryScreen().availableGeometry()
