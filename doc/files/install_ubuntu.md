@@ -3,7 +3,7 @@
 Need python3, PyQt6 and NumPy to be installed.
 
 ```
-# install pyqt5 and NumPy
+# install pyqt6 and NumPy
 sudo apt-get install -y python3-pip
 pip3 install --upgrade pip
 pip3 install numpy
