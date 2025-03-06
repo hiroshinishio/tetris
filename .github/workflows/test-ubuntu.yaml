@@ -39,6 +39,7 @@ jobs:
           sudo apt-get install -y python3-pip
           pip3 install --upgrade pip
           sudo apt-get install -y git
+          sudo apt-get install -y libegl1-mesa
           sudo apt-get install -y jq
 
       - name: tetris_sample
